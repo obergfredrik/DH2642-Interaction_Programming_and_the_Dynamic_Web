@@ -1,0 +1,33 @@
+.map-container {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    background-color: #123752;
+
+    display: block;
+    padding-left: 5%;
+    color: lightgray;
+}
+
+.mapbox {
+    background-color: #123752;
+}
+
+.map-title {
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 2%;
+    overflow-x: wrap;
+}
+
+.center-aligned-element {
+    text-align: center;
+}
+
+.infowindow-text {
+    color: black;
+}
+
+.google-maps-main {
+    width: calc(78vw - 6%) !important;
+    height: 75% !important;
+}

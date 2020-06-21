@@ -1,0 +1,35 @@
+.RadarView {
+    display: grid;
+    grid-template-columns: 4.5fr 1fr;
+    grid-template-rows: 9vh 6vh 85vh;
+}
+
+@media (max-width: 1440px) {
+    .RadarView {
+        grid-template-rows: 9vh 6vh 120vh;
+    }
+}
+
+#radarouter div div .bm-burger-button {
+    position: absolute;
+}
+
+.radarmap-container {
+    height: 100vh;
+    background-color: #123752;
+    color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.radarheader {
+    z-index: 2;
+    background-color: #123752;
+    color: lightgray;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

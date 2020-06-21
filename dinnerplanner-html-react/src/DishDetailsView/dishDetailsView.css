@@ -1,0 +1,25 @@
+
+.grid-container-details {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 0px;
+    width: 100%;
+    border-style: none;
+}
+
+
+.header{
+    grid-area:1/1/ span 1/ span 1;
+  }
+
+@media (min-width: 1024px) {
+    .header{
+        grid-area:1/1/ span 1/ span 2;
+      }
+
+    .grid-container-details {
+        grid-template-rows: auto auto;
+        grid-template-columns: 350px auto;
+        overflow:hidden;
+    }
+}

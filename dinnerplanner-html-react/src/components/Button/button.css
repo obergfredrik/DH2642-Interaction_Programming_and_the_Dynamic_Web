@@ -1,0 +1,27 @@
+.button{
+    background-color: #f7b36a !important;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border:0.1em solid #000000;
+    margin:1em 0.3em 1em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    text-align:center;
+    transition: all 0.2s;
+    max-width: 350px;
+    align-self: center;
+}
+
+.button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+.button:active {
+    background-color: #fdfdfd;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

@@ -1,0 +1,43 @@
+.recipeview-container {
+    display:flex; 
+    text-align:left; 
+    overflow-y: scroll; 
+    /*Use variable for dishsearch height*/
+    height: calc(100vh - 90px);;
+    
+}
+
+.instructions-container {
+    font-size: 80%;
+    padding-bottom: 3em;
+}
+
+.recipe-view-row-col {
+    width:50%; 
+    padding:1em;
+}
+
+.recipe-ingredients {
+    background-color: #ffe698;
+    border: solid black;
+}
+
+hr.horizontal-line {
+    border-top: solid black;
+}
+
+@media (max-width: 1024px) {
+    .recipeview-container {
+        display:flex; 
+        flex-direction:column; 
+        text-align:left; 
+        overflow-y: scroll; 
+        /*Use variable for dishsearch height*/
+        border-left: solid;
+    }
+
+    .recipe-view-row-col {
+        width:100%;
+        border-left: solid;
+    }
+}

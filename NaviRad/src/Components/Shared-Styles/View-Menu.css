@@ -1,0 +1,143 @@
+.view-menu-container {
+    min-width: 300px;
+    grid-row: 2 / span 3;
+    grid-column: 3;
+    background: rgb(18, 55, 82);
+    background: linear-gradient(0deg, rgba(18, 55, 82, 1) 26%, rgba(3, 33, 54, 1) 100%);
+    z-index: 2;
+}
+@media (max-width: 1440px) {
+    .view-menu-container {
+        min-width: 100px;
+        padding-right:1em;
+    }
+}
+
+
+.large-text {
+    font-size: large;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.medium-text {
+    font-size: medium;
+    margin-left: 5%;
+}
+
+.content-selector {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.joystick-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-outer {
+    width: 100%;
+}
+
+/* Source for slider style: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    margin-left: 10%;
+    height: 15px;
+    border-radius: 5px;
+    background: #708EA4;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+}
+
+/* Source for checkbox style: https://codepen.io/quinlo/pen/ReMRXz?editors=1100#0 */
+ul.ks-cboxtags {
+    list-style: none;
+    display: block;
+    padding: 20px;
+    margin: 0;
+}
+
+ul.ks-cboxtags li {
+    display: block;
+    max-width: fit-content;
+}
+
+ul.ks-cboxtags li label {
+    display: inline-block;
+    background-color: #708EA4;
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: lightgray;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 2px solid #708EA4;
+    background-color: #2E5977;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: 1000;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+    border: 2px solid #708EA4;
+}
+
+
+.view-input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #9fb6c6;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}

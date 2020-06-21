@@ -1,0 +1,13 @@
+.AboutView {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr 1fr;
+    grid-template-rows: 9vh 91vh;
+}
+
+.AboutView .App-header {
+    position: fixed;
+}
+
+#aboutouter div div .bm-burger-button {
+    position: fixed;
+}

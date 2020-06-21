@@ -1,0 +1,14 @@
+.printout{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    height: 100%;
+}
+
+.printoutmain{
+    display: grid;
+    grid-area: 3/1/span 1/span 1;
+    border-style: solid;
+}
+
+
+    

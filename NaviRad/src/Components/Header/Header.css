@@ -1,0 +1,23 @@
+.App-header {
+    background-color: #032136;
+    position: absolute;
+    width: 100vw;
+    height: 9vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: calc(20px + 2vmin);
+    font-weight: bold;
+    justify-content: center;
+    color: #708EA4;
+
+}
+
+.App-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 125px;
+}

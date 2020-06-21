@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinner planner</title>
+    <link href="src/view/style.css" rel="stylesheet" type="text/css">
+    <link href="src/view/homeview.css" rel="stylesheet" type="text/css">
+    <link href="src/view/overview.css" rel="stylesheet" type="text/css">
+    <link href="src/view/mydinner.css" rel="stylesheet" type="text/css">
+    <link href="src/view/printout.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
+
+</head>
+<body>
+<div class="container page-content" >
+    <div id="loader" class="spinner-border" role="status" style="display:none">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div id="container-header" style="display:none">
+    </div>
+    <div id="container-home" style="display:none">
+    </div>
+    <div id="container-sidebar" style="display:none">
+    </div>
+    <div id="container-details" style="display:none">
+    </div>
+    <div id="container-search" style="display:none">
+    </div>
+    <div id="container-overview" style="display:none">
+    </div>
+    <div id="container-printout" style="display:none">
+    </div>
+    <div id="container-mydinner" style="display:none">
+    </div>
+    <div id="container-notfound" style="display:none">
+        <h2>404: Page Not Found</h2>
+     </div>
+</div>
+
+<!-- Redux -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.5.2/redux.js"></script>
+<!-- babel, mithril for JSX -->
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js" charset="utf-8"></script>
+<script src="https://unpkg.com/mithril/mithril.js"></script>
+
+<!-- The application JavaScript code -->
+<script src="src/view/eventEmitter.js"></script>
+<script src="src/app.js"></script>
+<script src="src/model/apiConfig.js"></script>
+<script src="src/model/dinnerModel.js"></script>
+<script src="src/controller/searchViewController.js"></script>
+<script src="src/controller/homeViewController.js"></script>
+<script src="src/controller/overViewController.js"></script>
+<script src="src/controller/printoutViewController.js"></script>
+<script src="src/controller/dishDetailsViewController.js"></script>
+<!-- 
+     preset is set to react on some files, but the render callback is still m(). The reason it is set to react
+     is that extending classes always crash with the default preset (bug in babel default preset). 
+     use inspect element on the page, then search for 'm(' to verify that the transpiled code is not calling react
+-->
+<script type="text/jsx" src="src/view/overviewView.js"></script>
+<script type="text/jsx" src="src/view/homeView.js"></script>
+<script type="text/jsx" src="src/view/searchView.js"></script>
+<script type="text/jsx" src="src/view/sidebarView.js" data-presets="react"></script>
+<script type="text/jsx" src="src/view/dishsearchView.js"></script>
+<script type="text/jsx" src="src/view/dishdetailsView.js"></script>
+<script type="text/jsx" src="src/view/recipeView.js"></script>
+<script type="text/jsx" src="src/view/headerView.js"></script>
+<script type="text/jsx" src="src/view/printoutView.js"></script>
+<script type="text/jsx" src="src/view/myDinnerView.js"></script>
+<script type="text/jsx" src="src/view/searchresultsView.js" data-presets="react"></script>
+<script src="src/view/router.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+
+ .dishpresenter{
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    grid-area: 1/1/span 4/ span 3;
+    border-right: solid;
+    max-height: calc(100vh - 350px);
+    overflow-y: scroll;
+}
+
+.dishpresenter > div{
+    display: block;
+}
+
+.nodish{
+    
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        grid-area: 2/2/span 1/span 2;
+      
+}
+
+.dishdiv{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    height: 300px;
+    width: 300px;
+    margin: 2%;  
+    box-sizing: border-box;
+    margin-bottom: -20px;
+}
+
+.picdiv{
+    grid-area: 1/1/span 1/span 1;
+    max-width: 100%;
+    border: solid;
+    
+}
+
+.namediv{ 
+    grid-area: 2/1/span 1/span 1;
+    height:fit-content;
+    text-align: right;
+    border: solid;
+    background-color: #e3e3e3 ;
+    padding-right: 2%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.pricediv{
+
+    grid-area: 3/1/span 1/span 1;
+    height:fit-content;
+    color: red;
+    text-align: right;
+}  
+
+
+ @media (max-width: 1024px){ 
+.dishpresenter{
+    flex-direction: column;
+    flex-flow: row wrap;
+    grid-area: 1/1/span 1/ span 1;
+    border-style: solid;
+    height: 100%;
+    border: none;
+    border-bottom: solid;
+}
+
+.dishdiv{
+    padding:0;
+    margin-top: 5%;
+    margin-bottom: -40px;
+   
+}
+
+.nodish{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    grid-area: 1/1/span 1/span 1;
+  
+}
+}

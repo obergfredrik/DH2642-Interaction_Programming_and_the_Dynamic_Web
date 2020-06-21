@@ -1,0 +1,81 @@
+
+.overview{
+    display:grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto minmax(500px, auto) auto;
+ } 
+
+ .overviewheader{
+    grid-area: 1/1/span 1 /span 3;
+ }
+ 
+  .overviewmydinner {
+     display: flex;
+     flex-direction: column;
+     grid-area: 2/1/span 1/span 3;
+ }
+  
+
+.overviewmain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-area: 3/1/span 1/span 3;
+    overflow-y: scroll;
+    border: solid;
+    border-top: none;
+    overflow-y: hidden; 
+}
+
+ .overviewmain > div{
+    display: flex;
+ }
+
+.overviewprint{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: 4/1/span 1/span 3; 
+    height: 150px;  
+}
+.overviewbutton{
+    grid-area: 2/2/span 1/span 1;
+    text-align: center;
+}
+
+#toPrintBtn{
+    grid-area: 2/2/span 1/span 1;
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+ @media (max-width: 1024px){ 
+    #toPrintBtn{
+        grid-area: 2/2/span 1/span 1;
+        align-content: center;
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+    .overview{
+        display:grid;  
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+          
+     } 
+     
+    .overviewmain{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        min-height: fit-content;
+        border: solid;
+        border-top: none;
+        
+    }
+ }

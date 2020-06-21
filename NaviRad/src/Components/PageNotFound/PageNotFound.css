@@ -1,0 +1,38 @@
+.pagenotfound {
+    display: grid;
+
+    grid-template-rows: 9vh 91vh;
+}
+
+.pagetext {
+    display: inline-block;
+    background-color: #123752;
+    grid-row: 2;
+    height: 100%;
+    color: lightgray;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.headertext {
+    padding-bottom: 50px;
+}
+
+.notexistbutton {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #032136;
+    width: 150px;
+    border-color: lightgray;
+    border-width: 3px;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.notexistbutton:hover,.notexistbutton:active,.notexistbutton:focus {
+    background: #486D88;
+}
